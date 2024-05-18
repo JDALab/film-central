@@ -3,7 +3,7 @@
   # film-central
   <sub>A mov-cli plugin for watching Films and Shows.</sub>
 
-  <img src="https://github.com/mov-cli/mov-cli-vadapav/assets/132799819/6406133d-f840-424b-a1c9-04599fadb0a7">
+  <img src="https://github.com/JDALab/film-central/assets/123201787/e8150d96-64bf-437b-a768-4fdd6a45a2a0">
 
 </div>
 
