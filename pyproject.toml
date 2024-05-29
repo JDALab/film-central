@@ -46,4 +46,4 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["mov_cli_films*", "film_central*"]
+include = ["film_central*"]

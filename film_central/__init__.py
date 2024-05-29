@@ -19,4 +19,4 @@ plugin: PluginHookData = {
     } # NOTE: WE ARE IN NEED OF GOOD AND STABLE PROVIDERS 😭
 }
 
-__version__ = "1.3.15"
+__version__ = "1.3.16"
