@@ -79,7 +79,7 @@ class VidSrcToScraper(Scraper):
         if url is None:
             return None
 
-        if metadata.type == MetadataType.SERIES:
+        if metadata.type == MetadataType.MULTI:
             return Multi(
                 url = url,
                 title = metadata.title,
@@ -95,11 +95,11 @@ class VidSrcToScraper(Scraper):
         )
 
     def __get_embed(self, metadata: Metadata, episode: EpisodeSelector) -> Response:
-        media_type = "tv" if metadata.type == MetadataType.SERIES else "movie"
+        media_type = "tv" if metadata.type == MetadataType.MULTI else "movie"
 
         url = f"{self.base_url}/embed/{media_type}/{metadata.id}"
 
-        if metadata.type == MetadataType.SERIES:
+        if metadata.type == MetadataType.MULTI:
             url += f"/{episode.season}/{episode.episode}"
 
         return self.http_client.get(url)

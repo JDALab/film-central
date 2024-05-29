@@ -105,7 +105,7 @@ class VadapavScraper(Scraper):
 
     def scrape(self, metadata: Metadata, episode: utils.EpisodeSelector) -> Multi | Single:
 
-        if metadata.type == MetadataType.MOVIE:
+        if metadata.type == MetadataType.SINGLE:
             mov_dir_html = self.http_client.get(f"{self.base_url}/{metadata.id}")
             movie_soup = self.soup(mov_dir_html)
             mov_files = [
