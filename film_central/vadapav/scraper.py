@@ -22,7 +22,9 @@ class VadapavScraper(Scraper):
         self.base_url = "https://vadapav.mov"
         super().__init__(config, http_client, options)
 
-    def search(self, query: str, limit: int = 15) -> Iterable[Metadata]:
+    def search(self, query: str, limit: Optional[int]) -> Iterable[Metadata]:
+        limit = 20 if limit is None else limit
+
         search_url = f"{self.base_url}/s/{query}"
         search_html = self.http_client.get(search_url)
         search_results_soup = self.soup(search_html)

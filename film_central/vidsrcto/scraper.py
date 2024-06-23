@@ -28,7 +28,7 @@ class VidSrcToScraper(Scraper):
         self.sources = "https://vidsrc.to/ajax/embed/episode/{}/sources"
         self.source = "https://vidsrc.to/ajax/embed/source/{}"
         self.tmdb = TheMovieDB(http_client)
-        self.referrer = "https://e69975b881.nl/"
+        self.referrer = "https://vid2v11.site"
 
         super().__init__(config, http_client, options)
 
@@ -62,7 +62,7 @@ class VidSrcToScraper(Scraper):
         vidplay_id = None
 
         for source in sources["result"]:
-            if source["title"] == "Vidplay":
+            if source["title"] == "F2Cloud" or source["title"] == "Vidplay":
                 vidplay_id = source["id"]
 
         if not vidplay_id:
@@ -74,7 +74,7 @@ class VidSrcToScraper(Scraper):
 
         vidplay = VidPlay(self.http_client)
 
-        url = vidplay.resolve_source(vidplay_url)[0]
+        url = vidplay.resolve_source(vidplay_url, self.referrer)[0]
 
         if url is None:
             return None

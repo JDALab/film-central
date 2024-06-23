@@ -18,7 +18,7 @@ __all__ = (
 
 class VidPlay():
     def __init__(self, http_client: HTTPClient) -> None:
-        self.KEY_URL : str = "https://github.com/Ciarands/vidsrc-keys/blob/main/keys.json"
+        self.KEY_URL : str = "https://github.com/JDALab/vidkey-js/blob/main/keys.json"
         self.http_client = http_client
     
     def decode_data(self, key: str, data: Union[bytearray, str]) -> bytearray:
