@@ -3,6 +3,8 @@
   # film-central
   <sub>A mov-cli plugin for watching Films and Shows.</sub>
 
+  [![Pypi Version](https://img.shields.io/pypi/v/film-central?style=flat)](https://pypi.org/project/film-central)
+
   <img src="https://github.com/JDALab/film-central/assets/123201787/e8150d96-64bf-437b-a768-4fdd6a45a2a0">
 
 </div>
