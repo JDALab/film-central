@@ -4,17 +4,19 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from mov_cli.plugins import PluginHookData
 
-from .vidsrcto import *
+from .bflix import *
 from .vadapav import *
+from .vidsrcto import *
 
 plugin: PluginHookData = {
     "version": 1,
     "package_name": "film-central", # Required for the plugin update checker.
     "scrapers": {
-        "DEFAULT": VidSrcToScraper,
+        "DEFAULT": BFlix,
+        "bflix": BFlix, # Experimental
         "vadapav": VadapavScraper,
-        "vidsrcto": VidSrcToScraper
-    } # NOTE: WE ARE IN NEED OF GOOD AND STABLE PROVIDERS 😭
+        "vidsrcto": VidSrcToScraper,
+    }
 }
 
-__version__ = "1.3.17"
+__version__ = "1.4"
