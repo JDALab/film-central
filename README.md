@@ -15,7 +15,7 @@
 ## ⛑️ Support
 | Scraper | Status | Supports Android & iOS | Notes |
 | ------- | ------ | ---------------------- | :------: |
-| `bflix` | 🔵 Experimental | ❌ | **NEW** scraper! |
+| `bflix` | 🔵 Experimental | ❌ | **NEW** scraper! Many new films and good quality. |
 | `vadapav` | 🟠 Unstable | ✅ | You may get captchas. |
 | `vidsrcto` | 🪦 **Dead** | ✅ | Site domain is down. |
 
