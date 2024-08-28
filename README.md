@@ -12,6 +12,13 @@
 > [!CAUTION]
 > We are on the lookout for maintainers and if we don't find any soon this project may become unmaintained! Please consider or nominate a friend. Thank you.
 
+## ⛑️ Support
+| Scraper | Status | Supports Android & iOS | Notes |
+| ------- | ------ | ---------------------- | :------: |
+| `bflix` | 🔵 Experimental | ❌ | **NEW** scraper! |
+| `vadapav` | 🟠 Unstable | ✅ | You may get captchas. |
+| `vidsrcto` | 🪦 **Dead** | ✅ | Site domain is down. |
+
 ## Installation
 Here's how to install and add the plugin to mov-cli.
 
