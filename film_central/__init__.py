@@ -14,6 +14,7 @@ plugin: PluginHookData = {
     "scrapers": {
         "DEFAULT": BFlix,
         "ANDROID.DEFAULT": VadapavScraper,
+        "IOS.DEFAULT": VadapavScraper,
         "bflix": BFlix, # Experimental
         "vadapav": VadapavScraper,
         "vidsrcto": VidSrcToScraper,
