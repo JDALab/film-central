@@ -13,6 +13,7 @@ plugin: PluginHookData = {
     "package_name": "film-central", # Required for the plugin update checker.
     "scrapers": {
         "DEFAULT": BFlix,
+        "ANDROID.DEFAULT": VadapavScraper,
         "bflix": BFlix, # Experimental
         "vadapav": VadapavScraper,
         "vidsrcto": VidSrcToScraper,
