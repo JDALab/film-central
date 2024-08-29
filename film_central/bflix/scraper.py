@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 
 from mov_cli import Scraper
 from mov_cli.utils import EpisodeSelector
-from mov_cli.media import Metadata, MetadataType, Multi, Single
+from mov_cli.media import Metadata, MetadataType, Single
 
 from httpx import ReadTimeout
 
@@ -59,15 +59,20 @@ class BFlix(Scraper):
             quality_or_type = result.find("span", {"class": "quality"}).text # We use it to determine between multi media or single though.
             year = result.find("span", {"class": "year"}).text
 
+            if quality_or_type == "TV-Show":
+                # We won't support tv shows for this scraper as they use a 
+                # different video embed for tv shows and I have no idea how to scrape them.
+                continue
+
             yield Metadata(
                 id = watch_url,
                 title = title,
-                type = MetadataType.MULTI if quality_or_type == "TV-Show" else MetadataType.SINGLE,
+                type = MetadataType.SINGLE,
                 image_url = "https:" + image_url.replace("w342", "w500"),
                 year = year
             )
 
-    def scrape(self, metadata: Metadata, episode: EpisodeSelector) -> Optional[Multi | Single]:
+    def scrape(self, metadata: Metadata, episode: EpisodeSelector) -> Optional[Single]:
         response = self.__request_and_handle_timeouts(
             method = "GET",
             url = metadata.id
@@ -79,19 +84,12 @@ class BFlix(Scraper):
 
         stream_url = self.__grab_bflix_player_stream_url(iframe_tag)
 
-        media = None
-
-        if metadata.type == MetadataType.MULTI:
-            ... # TODO: handle tv series...
-
-        else:
-            media = Single(
-                url = stream_url,
-                title = metadata.title,
-                referrer = "https://bflix.gs/"
-            )
-
-        return media
+        # We're only supporting films so we only need to return single media.
+        return Single(
+            url = stream_url,
+            title = metadata.title,
+            referrer = "https://bflix.gs/"
+        )
 
     def __request_and_handle_timeouts(self, method: str, url: str, hangs: int = 5, **kwargs) -> Response:
         """
