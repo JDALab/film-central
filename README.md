@@ -13,11 +13,11 @@
 > We are on the lookout for maintainers and if we don't find any soon this project may become unmaintained! Please consider or nominate a friend. Thank you.
 
 ## ⛑️ Support
-| Scraper | Status | Supports <br> Android & iOS | Notes |
-| ------- | ------ | ---------------------- | :------: |
-| `bflix` | 🔵 Experimental | ❌ | **NEW** scraper! Many new films and good quality. |
-| `vadapav` | 🟠 Unstable | ✅ | You may get captchas. |
-| `vidsrcto` | 🪦 **Dead** | ✅ | Site domain is down. |
+| Scraper | Status | Films | TV Series | Supports <br> Android & iOS | Notes |
+| ------- | ------ | --- | --- | ---------------------- | :------: |
+| `bflix` | 🔵 Experimental | ✅ | ❌ | ❌ | **NEW** scraper! Many new films and good quality. |
+| `vadapav` | 🟠 Unstable | ✅ | ✅ | ✅ | **May get captchas**, very good quality (Sometimes 4k and high bitrate). |
+| `vidsrcto` | 🪦 **Dead** | ✅ | ✅ | ✅ | Site domain is down. |
 
 ## Installation
 Here's how to install and add the plugin to mov-cli.
