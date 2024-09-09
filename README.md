@@ -15,8 +15,8 @@
 ## ⛑️ Support
 | Scraper | Status | Films | TV Series | Supports <br> Android & iOS | Notes |
 | ------- | ------ | --- | --- | ---------------------- | :------: |
-| `bflix` | 🔵 Experimental | ✅ | ❌ | ❌ | **NEW** scraper! Many new films and good quality. |
-| `vadapav` | 🟠 Unstable | ✅ | ✅ | ✅ | **May get captchas**, very good quality (Sometimes 4k and high bitrate). |
+| `bflix` | 🔵 Experimental | ✅ | ❌ | ❌ | **NEW** scraper! Many new films and good quality. Very fast but has weird timing out issues. |
+| `vadapav` | 🟠 Unstable | ✅ | ✅ | ✅ | **May get captchas**, very good quality (Sometimes 4k and high bitrate) but very slow and sometimes episodes are missing. |
 | `vidsrcto` | 🪦 **Dead** | ✅ | ✅ | ✅ | Site domain is down. |
 
 ## Installation
