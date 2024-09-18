@@ -22,7 +22,7 @@ __all__ =(
     "BFlix",
 )
 
-BFLIX_HOST = "https://w1.nites.is"
+BFLIX_HOST = "https://nites.nz"
 
 class BFlix(Scraper):
     def __init__(
