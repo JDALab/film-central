@@ -15,9 +15,9 @@
 ## ⛑️ Support
 | Scraper | Status | Films | TV Series | Supports <br> Android & iOS | Notes |
 | ------- | ------ | --- | --- | ---------------------- | :------: |
-| `bflix` | 🔵 Experimental | ✅ | ❌ | ❌ | **NEW** scraper! Many new films and good quality. Very fast but has weird timing out issues. |
+| `bflix` | ~~🔵 Experimental~~ <br> 🔴 **[Broken](https://github.com/JDALab/film-central/issues/14)** | ✅ | ❌ | ❌ | **NEW** scraper! Many new films and good quality. Very fast but has weird timing out issues. |
 | `vadapav` | 🟠 Unstable | ✅ | ✅ | ✅ | **May get captchas**, very good quality (Sometimes 4k and high bitrate) but very slow and sometimes episodes are missing. |
-| `vidsrcto` | 🪦 **Dead** | ✅ | ✅ | ✅ | Site domain is down. |
+| `vidsrcto` | 🔴 **Broken** | ✅ | ✅ | ✅ | Site domain is down. |
 
 ## Installation
 Here's how to install and add the plugin to mov-cli.
