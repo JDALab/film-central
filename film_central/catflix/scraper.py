@@ -74,7 +74,7 @@ class CatFlix(Scraper):
         response = self.http_client.get(media_url)
         soup = self.soup(response.text)
 
-        iframe_tag = soup.find("iframe", src=re.compile(r'https://turbovid\.eu/embed/*+'))
+        iframe_tag = soup.find("iframe", src=re.compile(r'https://turbovid\.eu/embed/.+'))
         iframe_src = iframe_tag.get("src")
 
         response = self.http_client.get(iframe_src)
